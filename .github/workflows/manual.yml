@@ -18,4 +18,4 @@ jobs:
       id: create-labels
       uses: slambdev/create-labels-action@v1
       with:
-        path: "/github/workflow/app"
+        entryPoint: "/github/workflow/"
