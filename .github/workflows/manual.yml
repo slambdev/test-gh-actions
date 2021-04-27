@@ -16,6 +16,6 @@ jobs:
     steps:
     - name: Create labels action step
       id: create-labels
-      uses: slambdev/create-labels-action
+      uses: slambdev/create-labels-action@v2
       with:
         entryPoint: "/github/workflow/"
