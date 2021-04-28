@@ -14,9 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to create labels
     steps:
-      - uses: slambdev/create-labels-action@v18
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: slambdev/create-labels-action@v19
         with:
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
           gh_ibm_token: ${{ github.event.inputs.gh_ibm_token }}
           zenhub_ibm_apikey: ${{ github.event.inputs.zenhub_ibm_apikey }}
