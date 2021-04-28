@@ -18,3 +18,5 @@ jobs:
         with:
           node-version: '14'
           gh_token: ${{ secrets.GITHUB_TOKEN }}
+          gh_ibm_token: ${{ inputs.gh_ibm_token }}
+          zenhub_ibm_apikey: ${{ inputs.zenhub_ibm_apikey }}
