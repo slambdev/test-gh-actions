@@ -15,6 +15,8 @@ jobs:
     name: A job to create labels
     steps:
       - uses: slambdev/create-labels-action@v14
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           gh_ibm_token: ${{ github.event.inputs.gh_ibm_token }}
           zenhub_ibm_apikey: ${{ github.event.inputs.zenhub_ibm_apikey }}
