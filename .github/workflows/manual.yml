@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to create labels
     steps:
-    - name: Create labels action step
-      id: create-labels
-      uses: slambdev/create-labels-action@v8
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: slambdev/create-labels-action@v8
+        with:
+          node-version: '14'
+      - run: npm install
+      - run: npm start
