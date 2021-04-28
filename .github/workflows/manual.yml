@@ -17,5 +17,3 @@ jobs:
       - uses: slambdev/create-labels-action@v8
         with:
           node-version: '14'
-      - run: npm install
-      - run: npm start
