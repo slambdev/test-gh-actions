@@ -16,6 +16,5 @@ jobs:
     steps:
       - uses: slambdev/create-labels-action@v14
         with:
-          gh_token: ${{ secrets.GITHUB_TOKEN }}
           gh_ibm_token: ${{ github.event.inputs.gh_ibm_token }}
           zenhub_ibm_apikey: ${{ github.event.inputs.zenhub_ibm_apikey }}
