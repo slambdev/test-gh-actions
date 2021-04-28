@@ -17,3 +17,4 @@ jobs:
       - uses: slambdev/create-labels-action@v11
         with:
           node-version: '14'
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
